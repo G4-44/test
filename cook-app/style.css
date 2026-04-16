@@ -1,0 +1,45 @@
+/*
+  style.css：控制外观（样式）
+  不会影响功能，只影响“好不好看”
+*/
+
+body {
+  font-family: sans-serif; /* 简单无衬线字体 */
+  padding: 20px;
+  background: #f5f5f5;
+}
+
+/* 筛选区域 */
+.filters {
+  margin-bottom: 20px;
+}
+
+/* 每个菜谱卡片 */
+.card {
+  background: white;
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+}
+
+/* 步骤 */
+.step {
+  margin: 6px 0;
+}
+
+/* 可点击的步骤（有 WHY） */
+.clickable {
+  cursor: pointer; /* 鼠标变小手，提示可以点击 */
+}
+
+/* WHY 内容 */
+.why {
+  margin-left: 20px;
+  color: gray;
+  font-size: 0.9em;
+}
+
+/* 隐藏（用于展开/收起） */
+.hidden {
+  display: none;
+}

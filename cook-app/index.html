@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--
+  cook - mvp
+  这个页面做三件事：
+  1) 提供筛选条件（技法 / 主料）
+  2) 触发搜索（按钮或后续可改为自动）
+  3) 展示结果（由 app.js 渲染）
+-->
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>cook</title>
+  <!-- 引入样式文件（控制外观，不影响逻辑） -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>今天吃什么？</h1>
+
+<!-- 筛选区域：用最简单的 <select> 下拉框实现“分层选择” -->
+<div class="filters">
+  <label>技法：</label>
+  <!-- id 用于在 JS 中读取用户选择 -->
+  <select id="technique">
+    <option value="">不限</option>
+    <option value="炒">炒</option>
+    <option value="煮">煮/汤</option>
+  </select>
+
+  <label>主料：</label>
+  <select id="main">
+    <option value="">不限</option>
+    <option value="鸡蛋">鸡蛋</option>
+    <option value="米饭">米饭</option>
+  </select>
+
+  <!-- 点击按钮会调用 app.js 里的 search() 函数 -->
+  <button onclick="search()">推荐</button>
+</div>
+
+<hr>
+
+<!-- 结果容器：JS 会把筛选后的菜谱渲染到这里 -->
+<div id="results"></div>
+
+<!-- 在页面底部引入 JS（避免阻塞页面渲染） -->
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+[
+  {
+    "name": "番茄炒蛋",
+    "technique": "炒",
+    "main": "鸡蛋",
+    "ingredients": ["鸡蛋", "番茄"],
+    "steps": [
+      {
+        "text": "先炒鸡蛋",
+        "why": "让鸡蛋成块"
+      },
+      {
+        "text": "加入番茄翻炒",
+        "why": null
+      }
+    ]
+  },
+  {
+    "name": "青椒炒蛋",
+    "technique": "炒",
+    "main": "鸡蛋",
+    "ingredients": ["鸡蛋", "青椒"],
+    "steps": [
+      {
+        "text": "炒鸡蛋",
+        "why": null
+      },
+      {
+        "text": "加入青椒",
+        "why": "增加清香和口感层次"
+      }
+    ]
+  }
+]
